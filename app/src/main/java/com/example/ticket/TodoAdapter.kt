@@ -1,6 +1,6 @@
 package com.example.ticket
 
-
+import android.content.Intent
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
@@ -23,6 +23,16 @@ class TodoAdapter(var ctx: Context, var resource: Int, var items: ArrayList<Mode
         description.text = items[position].Description
         img.setImageResource(items[position].Icon) // Set image resource
 
+        // Tambahkan listener onClick
+        view.setOnClickListener {
+            val intent = Intent(ctx, PembelianTicketActivity::class.java)
+
+            // Mengirim data terkait item yang diklik ke PembelianTicketActivity
+            intent.putExtra("itemId", items[position].Id)
+            ctx.startActivity(intent)
+        }
+
         return view
     }
 }
+

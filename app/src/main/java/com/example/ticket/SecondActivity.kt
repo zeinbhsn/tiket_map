@@ -3,7 +3,7 @@ package com.example.ticket
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.*
-
+import android.content.Intent
 class SecondActivity : AppCompatActivity() {
     lateinit var labelHeader : TextView
     lateinit var listTodo : ListView
@@ -27,5 +27,13 @@ class SecondActivity : AppCompatActivity() {
 
         val adapter = TodoAdapter(this, R.layout.todo_item, Items)
         listTodo.adapter = adapter
+
+        // Tambahkan listener untuk item yang diklik di ListView
+        listTodo.setOnItemClickListener { _, _, position, _ ->
+            val intent = Intent(this, PembelianTicketActivity::class.java)
+            // Mengirim data terkait item yang diklik ke PembelianTicketActivity
+            intent.putExtra("itemId", Items[position].Id)
+            startActivity(intent)
+        }
     }
 }
