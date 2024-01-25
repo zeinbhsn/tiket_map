@@ -19,11 +19,12 @@ class SecondActivity : AppCompatActivity() {
         labelHeader.text = "What's up, $result?"
 
         val Items = ArrayList<Model>()
-        Items.add(Model("1", "", "Hello", "Coba aja"))
-        Items.add(Model("2", "", "Judul pertama", "Coba aja sih"))
-        Items.add(Model("3", "", "Judul Ketiga", "Coba-coba boleh kan"))
-        Items.add(Model("4", "", "Judul Keempat", "Testing 1234"))
-        Items.add(Model("5", "", "Judul Kelima", "Coba aja perhatikan semuanya deh"))
+        Items.add(Model("1", R.mipmap.ic_aquaman_foreground, "Hello", "Coba aja"))
+        Items.add(Model("2", R.mipmap.ic_dilan_foreground, "Judul pertama", "Coba aja sih"))
+        Items.add(Model("3", R.mipmap.ic_aquaman_foreground, "Judul Ketiga", "Coba-coba boleh kan"))
+        Items.add(Model("4", R.mipmap.ic_dilan_foreground, "Judul Keempat", "Testing 1234"))
+        Items.add(Model("5", R.mipmap.ic_aquaman_foreground, "Judul Kelima", "Coba aja perhatikan semuanya deh"))
+
 
         val adapter = TodoAdapter(this, R.layout.todo_item, Items)
         listTodo.adapter = adapter
