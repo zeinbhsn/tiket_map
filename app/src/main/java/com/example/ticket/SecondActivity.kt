@@ -15,15 +15,14 @@ class SecondActivity : AppCompatActivity() {
         labelHeader = findViewById(R.id.label_header)
         listTodo = findViewById(R.id.list_todo)
 
-        var result = intent.getStringExtra("result")
-        labelHeader.text = "What's up, $result?"
+        labelHeader.text = "Brazein Film"
 
         val Items = ArrayList<Model>()
-        Items.add(Model("1", R.mipmap.ic_aquaman_foreground, "Hello", "Coba aja"))
-        Items.add(Model("2", R.mipmap.ic_dilan_foreground, "Judul pertama", "Coba aja sih"))
-        Items.add(Model("3", R.mipmap.ic_aquaman_foreground, "Judul Ketiga", "Coba-coba boleh kan"))
-        Items.add(Model("4", R.mipmap.ic_dilan_foreground, "Judul Keempat", "Testing 1234"))
-        Items.add(Model("5", R.mipmap.ic_aquaman_foreground, "Judul Kelima", "Coba aja perhatikan semuanya deh"))
+        Items.add(Model("1", R.mipmap.ic_aquaman_foreground, "Aquaman", "Laga/Petualangan"))
+        Items.add(Model("2", R.mipmap.ic_dilan_foreground, "Dilan 1990", "Romance/Drama"))
+        Items.add(Model("3", R.mipmap.ic_bom_foreground, "13 Bom Di Jakarta", "Laga/Petualangan"))
+        Items.add(Model("4", R.mipmap.ic_budi_foreground, "Budi Pekerti", "Drama/Family Film"))
+        Items.add(Model("5", R.mipmap.ic_cinta_foreground, "Jatuh Cinta Seperti Di Film-Film", "Romance/Komedi"))
 
 
         val adapter = TodoAdapter(this, R.layout.todo_item, Items)
