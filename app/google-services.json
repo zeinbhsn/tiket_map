@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "629930142300",
+    "project_id": "tiketonline-d9967",
+    "storage_bucket": "tiketonline-d9967.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:629930142300:android:89f01223e0519d2c6ad499",
+        "android_client_info": {
+          "package_name": "com.example.ticket"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDgc-y3ySq5aZP7BrvGUydE7WgNeCcKSbQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

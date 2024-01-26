@@ -31,9 +31,8 @@ class SecondActivity : AppCompatActivity() {
         // Tambahkan listener untuk item yang diklik di ListView
         listTodo.setOnItemClickListener { _, _, position, _ ->
             val intent = Intent(this, PembelianTicketActivity::class.java)
-            // Mengirim data terkait item yang diklik ke PembelianTicketActivity
-            intent.putExtra("itemId", Items[position].Id)
-            startActivity(intent)
+
+
         }
     }
 }
